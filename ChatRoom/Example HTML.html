@@ -1,0 +1,20 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<h1>Chat room</h1>
+<p>User : <input style="width:10%; margin-left: 40px;" type="text" id = "chatT" value="Someone"><br> </p>
+
+<p>Message : <input style="width:70%; margin-left: 15px;" type="text" id="User" value="Hello World !!!"><br> </p>
+
+<a id = "coias" ><button style="    background-color: #66ffcc; border: none; color: #000033; padding: 12px 12px; text-align: center; text-decoration: none; font-size: 16px; margin: 4px 2px;" onclick="myFunction()" >Send</button></a>
+
+<a href=\"refresh\"><button style="background-color: #66ffcc; border: none; color: #000033; padding: 12px 12px; text-align: center; text-decoration: none; font-size: 16px; margin: 4px 2px;" >refresh</button></a>
+
+<script>
+function myFunction() {
+
+var x1 = document.getElementById("chatT").value;
+var x2 = document.getElementById("User").value;
+if (x1 != "" && x2 != ""){
+var y = document.getElementById('coias'); //or grab it by tagname etc
+y.href = "chat?&user="+x1+"&text="+x2;}
+}
+</script>
